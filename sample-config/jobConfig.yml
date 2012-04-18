@@ -12,26 +12,26 @@
 
 Jobs:
     # must be one word
-    Woodcutter:
+    Drvoseča:
         # full name of the job (displayed when browsing a job, used when joining and leaving)
         # also can be used as a prefix for the user's name if the option is enabled.
         # Shown as a prefix only when the user has 1 job.
         #
         # NOTE: Must be 1 word
-        fullname: Woodcutter
+        fullname: Drvoseča
         # Shortened version of the name of the job. Used as a prefix when the user has more 
         # than 1 job
-        shortname: W
+        shortname: D
         # The colour of the name, for a full list of supported colours, go to the message config.
         ChatColour: GREEN
         # Option to let you choose what kind of prefix this job adds to your name.
         # options are: full, title, job, shortfull, shorttitle, shortjob and none
         chat-display: full
         # [OPTIONAL] - the maximum level of this class
-        #max-level: 10
+        #max-level: 100
         # [OPTIONAL] - the maximum number of users on the server that can have this job at 
         # any one time (includes offline players).
-        #slots: 1
+        #slots: 10
         # Equation used for calculating how much experience is needed to go to the next level.
         # Available parameters:
         #   numjobs - the number of jobs the player has
@@ -135,12 +135,12 @@ Jobs:
                 value: true
                 # Permission granted when reaching level 10
                 level: 10
-    Miner:
-        fullname: Miner
-        shortname: M
+    Rudar:
+        fullname: Rudar
+        shortname: R
         ChatColour: DARK_GRAY
         chat-display: full
-        #max-level: 10
+        #max-level: 100
         #slots: 10
         leveling-progression-equation: 100*((1.13+(0.01*(numjobs-1)))^(joblevel-1))
         income-progression-equation: baseincome*((1.05)^(joblevel-1))
@@ -191,12 +191,12 @@ Jobs:
             Miner:
                 income: 10.0
                 experience: 10.0
-    Builder:
-        fullname: Builder
-        shortname: B
+    Gradjevinac:
+        fullname: Gradjevinac
+        shortname: G
         ChatColour: WHITE
         chat-display: full
-        #max-level: 10
+        #max-level: 100
         #slots: 10
         leveling-progression-equation: 100*((1.13+(0.01*(numjobs-1)))^(joblevel-1))
         income-progression-equation: baseincome*((1.05)^(joblevel-1))
@@ -264,9 +264,9 @@ Jobs:
             Builder:
                 income: 10.0
                 experience: 10.0
-    Digger:
-        fullname: Digger
-        shortname: D
+    Kopač:
+        fullname: Kopač
+        shortname: K
         ChatColour: GOLD
         chat-display: full
         #max-level: 10
@@ -300,10 +300,10 @@ Jobs:
                 experience: 10.0
     Farmer:
         fullname: Farmer
-        shortname: Fa
+        shortname: F
         ChatColour: BLUE
         chat-display: full
-        #max-level: 10
+        #max-level: 100
         #slots: 10
         leveling-progression-equation: 100*((1.13+(0.01*(numjobs-1)))^(joblevel-1))
         income-progression-equation: baseincome*((1.05)^(joblevel-1))
@@ -330,12 +330,12 @@ Jobs:
             Farmer:
                 income: 10.0
                 experience: 10.0
-    Hunter:
-        fullname: Hunter
-        shortname: H
+    Lovac:
+        fullname: HunterLovac
+        shortname: L
         ChatColour: RED
         chat-display: full
-        #max-level: 10
+        #max-level: 100
         #slots: 10
         leveling-progression-equation: 100*((1.13+(0.01*(numjobs-1)))^(joblevel-1))
         income-progression-equation: baseincome*((1.05)^(joblevel-1))
@@ -357,46 +357,46 @@ Jobs:
                 income: 5.0
                 experience: 5.0
             Creeper: 
-                income: 10.0
+                income: 60.0
                 experience: 10.0
             Skeleton: 
-                income: 10.0
+                income: 40.0
                 experience: 10.0
             Spider:
-                income: 10.0
+                income: 30.0
                 experience: 10.0
             Zombie: 
-                income: 10.0
+                income: 30.0
                 experience: 10.0
             Player:
                 income: 7.5
                 experience: 7.5
         custom-kill:
-            Woodcutter:
+            Drvoseča:
                 income: 10.0
                 experience: 10.0
-            Miner:
+            Rudar:
                 income: 10.0
                 experience: 10.0
-            Digger:
+            Kopač:
                 income: 10.0
                 experience: 10.0
             Farmer:
                 income: 10.0
                 experience: 10.0
-            Builder:
+            Gradjevinac:
                 income: 10.0
                 experience: 10.0
-            Hunter:
+            Lovac:
                 income: 20.0
                 experience: 20.0
                 
-    Fisherman:
-        fullname: Fisherman
-        shortname: Fi
+    Ribolovac:
+        fullname: Ribolovac
+        shortname: Ri
         ChatColour: AQUA
         chat-display: full
-        #max-level: 10
+        #max-level: 100
         #slots: 10
         leveling-progression-equation: 100*((1.13+(0.01*(numjobs-1)))^(joblevel-1))
         income-progression-equation: baseincome*((1.05)^(joblevel-1))
@@ -414,12 +414,12 @@ Jobs:
                 income: 10.0
                 experience: 10.0
                 
-    Weaponsmith:
-        fullname: Weaponsmith
-        shortname: W
+    Kovač:
+        fullname: Kovač
+        shortname: Ko
         ChatColour: DARK_PURPLE
         chat-display: full
-        #max-level: 10
+        #max-level: 100
         #slots: 10
         leveling-progression-equation: 100*((1.13+(0.01*(numjobs-1)))^(joblevel-1))
         income-progression-equation: baseincome*((1.05)^(joblevel-1))
